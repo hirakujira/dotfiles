@@ -62,10 +62,14 @@ $script_dir/jailbreak/setup.sh
 echo -e "${GREEN}Configure iOS tweak development environment...${NONE}"
 $script_dir/casks/install.sh
 
-echo -e "${GREEN}Imporing Xcode themes...${NONE}"
+echo -e "${GREEN}Import Xcode themes...${NONE}"
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 cp $config_dir/*.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
-echo -e "${GREEN}Importing iTerm2 profile...${NONE}"
+echo -e "${GREEN}Import iTerm2 profile...${NONE}"
 mkdir -p ~/Library/Application\ Support/iTerm2/DynamicProfiles
 cp $config_dir/iTerm2.json ~/Library/Application\ Support/iTerm2/DynamicProfiles
+
+echo -e "${GREEN}Config settings...${NONE}"
+#https://github.com/mathiasbynens/dotfiles/blob/main/.macos
+$script_dir/config.sh
