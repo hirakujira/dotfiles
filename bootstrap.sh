@@ -67,6 +67,7 @@ $script_dir/jailbreak/setup.sh
 echo -e "${GREEN}[dotfiles] Configure iOS tweak development environment...${NONE}"
 $script_dir/casks/install.sh
 
+### Restore setting files
 echo -e "${GREEN}[dotfiles] Import Xcode themes...${NONE}"
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 cp $config_dir/*.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
@@ -81,3 +82,5 @@ cp -R $config_dir/karabiner ~/.config
 echo -e "${GREEN}[dotfiles] Config settings...${NONE}"
 #https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 $script_dir/config.sh
+
+echo -e "${GREEN}[dotfiles] All done!${NONE}"
