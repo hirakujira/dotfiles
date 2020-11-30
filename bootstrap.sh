@@ -1,6 +1,7 @@
 #!/bin/bash
 
-GREEN='\033[0;32m'
+GREEN='\033[1;32m'
+RED='\033[1;31m'
 NONE='\033[0m' # No Color
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
@@ -8,17 +9,17 @@ script_dir=$DIR/scripts
 config_dir=$DIR/configs
 
 # Allow to run all apps
-echo -e "${GREEN}Disable Gatekeeper...${NONE}"
+echo -e "${GREEN}[dotfiles] Disable Gatekeeper...${NONE}"
 sudo spctl --master-disable
 
 # Check HomeBrew
-echo -e "${GREEN}Install Homebrew...${NONE}"
+echo -e "${GREEN}[dotfiles] Install Homebrew...${NONE}"
 which -s brew
 if [[ $? != 0 ]] ; then
     # Install Homebrew
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-    echo -e "${GREEN}Homebrew exists, check for updates...${NONE}"
+    echo -e "${GREEN}[dotfiles] Homebrew exists, check for updates...${NONE}"
     brew update
 fi
 
@@ -26,19 +27,23 @@ fi
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 #### iTerm2
-echo -e "${GREEN}Install iTerm2...${NONE}"
+echo -e "${GREEN}[dotfiles] Install iTerm2...${NONE}"
 brew cask install iterm2
 
 ### zim
-echo -e "${GREEN}Install zim...${NONE}"
+echo -e "${GREEN}[dotfiles] Install zim...${NONE}"
 $script_dir/zim/install.sh
 
-echo -e "${GREEN}Configure zim plugins...${NONE}"
-echo -e "${GREEN}Just ignore 'Not installed' and 'Failed to source' error, it's fine.${NONE}"
+echo -e "${GREEN}[dotfiles] Configure zim plugins...${NONE}"
+echo -e "${RED}[dotfiles] !!!Just ignore 'Not installed' and 'Failed to source' error, it's fine.!!!${NONE}"
 $script_dir/zim/plugins.sh
+echo -e "${RED}[dotfiles] !!!Just ignore 'Not installed' and 'Failed to source' error, it's fine.!!!${NONE}"
+
+echo -e "${GREEN}Configure zshrc...${NONE}"
+$script_dir/zim/zshrc.sh
 
 ### Essential
-echo -e "${GREEN}Install Python, nvm and rvm...${NONE}"
+echo -e "${GREEN}[dotfiles] Install Python, nvm and rvm...${NONE}"
 brew install python3
 brew install nvm
 echo -e 'export NVM_DIR="$HOME/.nvm"
@@ -47,29 +52,32 @@ echo -e 'export NVM_DIR="$HOME/.nvm"
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 ### Command-line Utilities
-echo -e "${GREEN}Install command-line utilities...${NONE}"
+echo -e "${GREEN}[dotfiles] Install command-line utilities...${NONE}"
 $script_dir/command-line/setup.sh
 
 ### iOS development
-echo -e "${GREEN}Install iOS development environment...${NONE}"
+echo -e "${GREEN}[dotfiles] Install iOS development environment...${NONE}"
 $script_dir/ios/setup.sh
 
 ### Jailbreak development
-echo -e "${GREEN}Configure iOS tweak development environment...${NONE}"
+echo -e "${GREEN}[dotfiles] Configure iOS tweak development environment...${NONE}"
 $script_dir/jailbreak/setup.sh
 
 ### Casks
-echo -e "${GREEN}Configure iOS tweak development environment...${NONE}"
+echo -e "${GREEN}[dotfiles] Configure iOS tweak development environment...${NONE}"
 $script_dir/casks/install.sh
 
-echo -e "${GREEN}Import Xcode themes...${NONE}"
+echo -e "${GREEN}[dotfiles] Import Xcode themes...${NONE}"
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 cp $config_dir/*.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
-echo -e "${GREEN}Import iTerm2 profile...${NONE}"
-mkdir -p ~/Library/Application\ Support/iTerm2/DynamicProfiles
-cp $config_dir/iTerm2.json ~/Library/Application\ Support/iTerm2/DynamicProfiles
+echo -e "${GREEN}[dotfiles] Import iTerm2 profile...${NONE}"
+cp -f $config_dir/com.googlecode.iterm2.plist ~/Library/Preferences
 
-echo -e "${GREEN}Config settings...${NONE}"
+echo -e "${GREEN}[dotfiles] Import karabiner settings...${NONE}"
+mkdir -p ~/.config
+cp -R $config_dir/karabiner ~/.config
+
+echo -e "${GREEN}[dotfiles] Config settings...${NONE}"
 #https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 $script_dir/config.sh
