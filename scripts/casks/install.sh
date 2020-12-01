@@ -1,9 +1,10 @@
 #!/bin/bash
 
-### Setapp
-# brew cask install setapp
+### Essential
 
 ### Productivity
+brew cask install dropbox
+brew cask install cloudapp
 brew cask install fantastical
 brew cask install microsoft-edge
 brew cask install google-chrome
@@ -18,17 +19,17 @@ brew cask install microsoft-excel
 brew cask install microsoft-powerpoint
 
 ### SNS
-brew cask install nally
-brew cask install caprine
 brew cask install telegram
-brew cask install skype
 brew cask install slack
+brew cask install caprine
+brew cask install skype
 brew cask install discord
 brew cask install adium
+brew cask install nally
 
 ### Development
-brew cask install sublime-text
 brew cask install visual-studio-code
+brew cask install sublime-text
 brew cask install charles
 brew cask install wireshark
 brew cast install sequel-pro
@@ -45,12 +46,7 @@ brew cask install docker
 # brew cask install teamviewer
 brew cask install anydesk
 
-### Online Storage
-brew cask install dropbox
-brew cask install cloudapp
-
 ### Privacy and Security
-brew cask install 1password
 # brew cask install adguard
 
 ### Data and Disk
@@ -90,5 +86,5 @@ brew cask install hyperdock
 brew cask install v2rayx
 brew cask install xld
 brew cask install coconutbattery
-brew cask install launchpad-manager
-brew cask install onyx
+#brew cask install launchpad-manager
+#brew cask install onyx

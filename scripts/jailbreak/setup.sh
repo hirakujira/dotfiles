@@ -14,11 +14,13 @@ brew cask install jtool2
 
 brew cask install checkra1n
 
+mkdir -p /opt/theos
+
 echo '
 # Theos Settings
-export THEOS=~/theos
+export THEOS=/opt/theos
 export THEOS_DEVICE_IP="127.0.0.1 -p 2222"
-export SYSROOT=~/theos/sdks/iPhoneOS10.3.sdk
+export SYSROOT=/opt/theos/sdks/iPhoneOS10.3.sdk
 export SDKVERSION=10.3' >> ~/.zshrc
 
 echo '
@@ -47,4 +49,4 @@ makelegacy() {
  echo "DEVELOPER_DIR unset"
 }' >> ~/.zshrc
 
-git clone --recursive https://github.com/theos/theos.git ~/theos
+git clone --recursive https://github.com/theos/theos.git /opt/theos

@@ -34,6 +34,6 @@ function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
 
-function nvmload () {
-	source $(brew --prefix nvm)/nvm.sh
+function nvmload() {
+  source $(brew --prefix nvm)/nvm.sh
 }' >> ~/.zshrc
