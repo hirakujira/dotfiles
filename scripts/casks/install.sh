@@ -7,7 +7,7 @@ brew cask install dropbox
 brew cask install cloudapp
 brew cask install fantastical
 brew cask install microsoft-edge
-brew cask install google-chrome
+# brew cask install google-chrome
 brew cask install firefox
 brew cask install skitch
 brew cask install macdown
@@ -41,8 +41,9 @@ brew cask install fork
 brew cask install postman
 brew cask install osxfuse
 brew cask install docker
+brew cask install provisionql
 
-### Remote
+### Remote Control
 # brew cask install teamviewer
 brew cask install anydesk
 
@@ -67,7 +68,7 @@ brew cask install imazing
 brew cask install ifunbox
 brew cask install android-file-transfer
 
-### BitCoin
+### Crypto Currency
 brew cask install exodus
 
 ### Games
@@ -75,13 +76,13 @@ brew cask install steam
 brew cask install openemu
 
 ### Utilities
-brew cask install CandyBar
+# brew cask install CandyBar
 brew cask install karabiner-elements
 brew cask install cyberduck
 brew cask install thunder
 brew cask install pacifist
 brew cask install easyfind
-brew cask install divvy
+# brew cask install divvy
 brew cask install hyperdock
 brew cask install v2rayx
 brew cask install xld

@@ -82,6 +82,8 @@ echo -e "${GREEN}[dotfiles] Import git global settings...${NONE}"
 cp -f $config_dir/git/gitconfig ~/.gitconfig
 cp -f $config_dir/git/gitignore_global ~/.gitignore_global
 
+echo -e "${GREEN}[dotfiles] Fix 1Password bug...${NONE}"
+mkdir -p ~/Library/Application\ Support/Google/Chrome
 
 echo -e "${GREEN}[dotfiles] Config settings...${NONE}"
 #https://github.com/mathiasbynens/dotfiles/blob/main/.macos
