@@ -64,7 +64,7 @@ echo -e "${GREEN}[dotfiles] Configure iOS tweak development environment...${NONE
 $script_dir/jailbreak/setup.sh
 
 ### Casks
-echo -e "${GREEN}[dotfiles] Configure iOS tweak development environment...${NONE}"
+echo -e "${GREEN}[dotfiles] Install apps...${NONE}"
 $script_dir/casks/install.sh
 
 echo -e "${GREEN}[dotfiles] Import Xcode themes...${NONE}"
@@ -85,6 +85,6 @@ cp -f $config_dir/git/gitignore_global ~/.gitignore_global
 echo -e "${GREEN}[dotfiles] Fix 1Password bug...${NONE}"
 mkdir -p ~/Library/Application\ Support/Google/Chrome
 
-echo -e "${GREEN}[dotfiles] Config settings...${NONE}"
-#https://github.com/mathiasbynens/dotfiles/blob/main/.macos
+echo -e "${GREEN}[dotfiles] Config misc settings...${NONE}"
+# https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 $script_dir/config.sh

@@ -3,13 +3,14 @@
 ### Essential
 
 ### Productivity
+brew install 1password
 brew install dropbox
 brew install cloudapp
 brew install fantastical
 brew install microsoft-edge
 # brew install google-chrome
 brew install firefox
-brew install skitch
+# brew install skitch
 brew install macdown
 brew install adobe-creative-cloud
 
@@ -28,11 +29,13 @@ brew install adium
 brew install nally
 
 ### Development
+brew tap homebrew/cask-fonts
+brew install font-fira-code
 brew install visual-studio-code
 brew install sublime-text
 brew install charles
 brew install wireshark
-brew cast install sequel-pro
+brew install sequel-pro
 brew install dash
 brew install hex-fiend
 brew install codekit
@@ -59,7 +62,7 @@ brew install drivedx
 # brew install vlc
 brew install iina
 brew install handbrake
-brew install spotify
+# brew install spotify
 brew install tidal
 brew install vox
 
