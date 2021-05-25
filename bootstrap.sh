@@ -17,7 +17,7 @@ echo -e "${GREEN}[dotfiles] Install Homebrew...${NONE}"
 which -s brew
 if [[ $? != 0 ]] ; then
     # Install Homebrew
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
     echo -e "${GREEN}[dotfiles] Homebrew exists, check for updates...${NONE}"
     brew update
@@ -28,7 +28,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 #### iTerm2
 echo -e "${GREEN}[dotfiles] Install iTerm2...${NONE}"
-brew cask install iterm2
+brew install iterm2
 
 ### zim
 echo -e "${GREEN}[dotfiles] Install zim...${NONE}"

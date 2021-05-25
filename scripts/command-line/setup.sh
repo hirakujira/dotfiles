@@ -8,5 +8,5 @@ brew install nmap
 brew install hashcat
 brew install xz
 
-brew cask install osxfuse
+brew install osxfuse
 brew install sshfs

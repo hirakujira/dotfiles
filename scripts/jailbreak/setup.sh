@@ -9,10 +9,10 @@ brew install libimobiledevice
 brew tap stek29/homebrew-idevice
 brew install ldid2
 
-brew cask install jtool
-brew cask install jtool2
+brew install jtool
+brew install jtool2
 
-brew cask install checkra1n
+brew install checkra1n
 
 mkdir -p /opt/theos
 

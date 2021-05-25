@@ -3,89 +3,89 @@
 ### Essential
 
 ### Productivity
-brew cask install dropbox
-brew cask install cloudapp
-brew cask install fantastical
-brew cask install microsoft-edge
-# brew cask install google-chrome
-brew cask install firefox
-brew cask install skitch
-brew cask install macdown
-brew cask install adobe-creative-cloud
+brew install dropbox
+brew install cloudapp
+brew install fantastical
+brew install microsoft-edge
+# brew install google-chrome
+brew install firefox
+brew install skitch
+brew install macdown
+brew install adobe-creative-cloud
 
 ### Office
-brew cask install microsoft-word
-brew cask install microsoft-excel
-brew cask install microsoft-powerpoint
+brew install microsoft-word
+brew install microsoft-excel
+brew install microsoft-powerpoint
 
 ### SNS
-brew cask install telegram
-brew cask install slack
-brew cask install caprine
-brew cask install skype
-brew cask install discord
-brew cask install adium
-brew cask install nally
+brew install telegram
+brew install slack
+brew install caprine
+brew install skype
+brew install discord
+brew install adium
+brew install nally
 
 ### Development
-brew cask install visual-studio-code
-brew cask install sublime-text
-brew cask install charles
-brew cask install wireshark
+brew install visual-studio-code
+brew install sublime-text
+brew install charles
+brew install wireshark
 brew cast install sequel-pro
-brew cask install dash
-brew cask install hex-fiend
-brew cask install codekit
-brew cask install sourcetree
-brew cask install fork
-brew cask install postman
-brew cask install osxfuse
-brew cask install docker
-brew cask install provisionql
+brew install dash
+brew install hex-fiend
+brew install codekit
+brew install sourcetree
+brew install fork
+brew install postman
+brew install osxfuse
+brew install docker
+brew install provisionql
 
 ### Remote Control
-# brew cask install teamviewer
-brew cask install anydesk
+# brew install teamviewer
+brew install anydesk
 
 ### Privacy and Security
-# brew cask install adguard
+# brew install adguard
 
 ### Data and Disk
-brew cask install carbon-copy-cloner
-brew cask install daisydisk
-brew cask install drivedx
+brew install carbon-copy-cloner
+brew install daisydisk
+brew install drivedx
 
 ### Media
-# brew cask install vlc
-brew cask install iina
-brew cask install handbrake
-brew cask install spotify
-brew cask install tidal
-brew cask install vox
+# brew install vlc
+brew install iina
+brew install handbrake
+brew install spotify
+brew install tidal
+brew install vox
 
 ### Mobile Device Management
-brew cask install imazing
-brew cask install ifunbox
-brew cask install android-file-transfer
+brew install imazing
+brew install ifunbox
+brew install android-file-transfer
 
 ### Crypto Currency
-brew cask install exodus
+brew install exodus
 
 ### Games
-brew cask install steam
-brew cask install openemu
+brew install steam
+brew install openemu
 
 ### Utilities
-# brew cask install CandyBar
-brew cask install karabiner-elements
-brew cask install cyberduck
-brew cask install thunder
-brew cask install pacifist
-brew cask install easyfind
-# brew cask install divvy
-brew cask install hyperdock
-brew cask install v2rayx
-brew cask install xld
-brew cask install coconutbattery
-#brew cask install launchpad-manager
-#brew cask install onyx
+# brew install CandyBar
+brew install karabiner-elements
+brew install cyberduck
+brew install thunder
+brew install pacifist
+brew install easyfind
+# brew install divvy
+brew install hyperdock
+brew install v2rayx
+brew install xld
+brew install coconutbattery
+#brew install launchpad-manager
+#brew install onyx
