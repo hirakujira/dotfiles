@@ -7,6 +7,7 @@ brew install htop
 brew install nmap
 brew install hashcat
 brew install xz
+brew install ctop
 
 brew install osxfuse
 brew install sshfs

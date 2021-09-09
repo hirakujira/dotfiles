@@ -12,7 +12,7 @@ brew install microsoft-edge
 brew install firefox
 # brew install skitch
 brew install macdown
-brew install adobe-creative-cloud
+# brew install adobe-creative-cloud
 
 ### Office
 brew install microsoft-word
@@ -22,10 +22,10 @@ brew install microsoft-powerpoint
 ### SNS
 brew install telegram
 brew install slack
-brew install caprine
+# brew install caprine
 brew install skype
 brew install discord
-brew install adium
+# brew install adium
 brew install nally
 
 ### Development
@@ -35,11 +35,11 @@ brew install visual-studio-code
 brew install sublime-text
 brew install charles
 brew install wireshark
-brew install sequel-pro
-brew install dash
+# brew install sequel-pro
+# brew install dash
 brew install hex-fiend
 brew install codekit
-brew install sourcetree
+# brew install sourcetree
 brew install fork
 brew install postman
 brew install osxfuse
@@ -68,15 +68,15 @@ brew install vox
 
 ### Mobile Device Management
 brew install imazing
-brew install ifunbox
+# brew install ifunbox
 brew install android-file-transfer
 
 ### Crypto Currency
 brew install exodus
 
 ### Games
-brew install steam
-brew install openemu
+# brew install steam
+# brew install openemu
 
 ### Utilities
 # brew install CandyBar
