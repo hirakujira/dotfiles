@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Replace theme
-theme_command=$(eval "sed -i '' 's/zmodule\ steeef/zmodule\ romkatv\/powerlevel10k/g' ~/.zimrc")
+theme_command=$(eval "echo -e '#Theme\nzmodule romkatv/powerlevel10k\n' >> ~/.zimrc")
 
 # Add Z
-z_command=$(eval "echo -e '#Z\nzmodule rupa/z'  >> ~/.zimrc")
+z_command=$(eval "echo -e '#Z\nzmodule rupa/z\n' >> ~/.zimrc")
 
 zsh -l -c 'source ~/.zshrc && $theme_command && $z_command && zimfw install'
 
