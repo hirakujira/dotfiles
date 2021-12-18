@@ -53,7 +53,7 @@ echo -e 'export NVM_DIR="$HOME/.nvm"
 
 ### Command-line Utilities
 echo -e "${GREEN}[dotfiles] Install command-line utilities...${NONE}"
-$script_dir/command-line/setup.sh
+$script_dir/cli-tools/setup.sh
 
 ### iOS development
 echo -e "${GREEN}[dotfiles] Install iOS development environment...${NONE}"
