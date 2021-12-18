@@ -15,8 +15,8 @@ export LC_TIME="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
 # Aliases
-alias hosts1="sed -i '' 's/127\.0\.0\.1/127\.0\.0\.2/g' ~/.ssh/known_hosts"
-alias hosts2="sed -i '' 's/127\.0\.0\.2/127\.0\.0\.1/g' ~/.ssh/known_hosts"
+alias hosts1="sed -i '\'''\'' '\''s/127\.0\.0\.1/127\.0\.0\.2/g'\'' ~/.ssh/known_hosts"
+alias hosts2="sed -i '\'''\'' '\''s/127\.0\.0\.2/127\.0\.0\.1/g'\'' ~/.ssh/known_hosts"
 alias python=/usr/local/bin/python3.7
 alias pip=/usr/local/bin/pip3
 
