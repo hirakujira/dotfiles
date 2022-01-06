@@ -46,7 +46,13 @@ loadnvm() {
   source $(brew --prefix nvm)/nvm.sh
 }
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+loaddocker() {
+  if [[ -z "${DOCKER_MACHINE_NAME}" ]]; then
+    eval $(docker-machine env prl-dev)
+    docker-machine ssh prl-dev "sudo bash -c \"echo $'\''search localdomain\nnameserver 8.8.8.8'\'' > /etc/resolv.conf\""
+  else
+    echo "Docker is loaded"
+  fi
+}
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >> ~/.zshrc
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"' >> ~/.zshrc
