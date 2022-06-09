@@ -44,25 +44,25 @@ echo -e "${GREEN}Configure zshrc...${NONE}"
 $script_dir/zim/zshrc.sh
 
 ### Essential
-echo -e "${GREEN}[dotfiles] Install Python, nvm and rvm...${NONE}"
-brew install python3
-brew install nvm
-echo -e 'export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zimrc
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
+# echo -e "${GREEN}[dotfiles] Install Python, nvm and rvm...${NONE}"
+# brew install python3
+# brew install nvm
+# echo -e 'export NVM_DIR="$HOME/.nvm"
+#   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+#   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zimrc
+# \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 ### Command-line Utilities
 echo -e "${GREEN}[dotfiles] Install command-line utilities...${NONE}"
 $script_dir/cli-tools/setup.sh
 
 ### iOS development
-echo -e "${GREEN}[dotfiles] Install iOS development environment...${NONE}"
-$script_dir/ios/setup.sh
+# echo -e "${GREEN}[dotfiles] Install iOS development environment...${NONE}"
+# $script_dir/ios/setup.sh
 
 ### Jailbreak development
-echo -e "${GREEN}[dotfiles] Configure iOS tweak development environment...${NONE}"
-$script_dir/jailbreak/setup.sh
+# echo -e "${GREEN}[dotfiles] Configure iOS tweak development environment...${NONE}"
+# $script_dir/jailbreak/setup.sh
 
 ### Casks
 echo -e "${GREEN}[dotfiles] Install apps...${NONE}"
@@ -75,16 +75,16 @@ cp $config_dir/*.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThe
 echo -e "${GREEN}[dotfiles] Import iTerm2 profile...${NONE}"
 cp -f $config_dir/com.googlecode.iterm2.plist ~/Library/Preferences
 
-echo -e "${GREEN}[dotfiles] Import karabiner settings...${NONE}"
-mkdir -p ~/.config
-cp -R $config_dir/karabiner ~/.config
+# echo -e "${GREEN}[dotfiles] Import karabiner settings...${NONE}"
+# mkdir -p ~/.config
+# cp -R $config_dir/karabiner ~/.config
 
 echo -e "${GREEN}[dotfiles] Import git global settings...${NONE}"
 cp -f $config_dir/git/gitconfig ~/.gitconfig
 cp -f $config_dir/git/gitignore_global ~/.gitignore_global
 
-echo -e "${GREEN}[dotfiles] Fix 1Password bug...${NONE}"
-mkdir -p ~/Library/Application\ Support/Google/Chrome
+# echo -e "${GREEN}[dotfiles] Fix 1Password bug...${NONE}"
+# mkdir -p ~/Library/Application\ Support/Google/Chrome
 
 echo -e "${GREEN}[dotfiles] Config misc settings...${NONE}"
 # https://github.com/mathiasbynens/dotfiles/blob/main/.macos
