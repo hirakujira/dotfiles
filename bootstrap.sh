@@ -17,7 +17,8 @@ echo -e "${GREEN}[dotfiles] Install Homebrew...${NONE}"
 which -s brew
 if [[ $? != 0 ]] ; then
     # Install Homebrew
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo -e "${RED}[dotfiles] Please install Homebrew first!${NONE}"
+    exit 1
 else
     echo -e "${GREEN}[dotfiles] Homebrew exists, check for updates...${NONE}"
     brew update
